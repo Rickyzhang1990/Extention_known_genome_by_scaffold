@@ -1,6 +1,6 @@
 import sys,os
 
-sys.path.append('/lustre/work/chaozhang/scripts/useful_tools/')
+sys.path.append('path')
 
 import kaka_module as kaka 
 
