@@ -2,7 +2,7 @@
 #coding = utf-8
 
 import os,sys
-sys.path.append('/lustre/work/chaozhang/scripts/useful_tools')
+sys.path.append('Path')
 import kaka_module as kaka
 import json
 from collections import defaultdict
