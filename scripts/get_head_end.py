@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os,sys
-sys.path.append('/lustre/work/chaozhang/scripts/useful_tools')
+sys.path.append('path')
 import kaka_module as kaka 
 
 def  get_head_tail(fasta,out,per = 0.3):
