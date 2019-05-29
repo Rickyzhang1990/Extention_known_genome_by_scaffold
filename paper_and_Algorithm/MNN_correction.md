@@ -8,4 +8,4 @@ cells of the same type across batches.
 
 # **Knowledge**   
 The first step of our method involves global scaling of the data through a cosine normalization  Y = Y/||Y||
-
+[!Gaussian kernel](https://github.com/Rickyzhang1990/during_work/tree/master/paper_and_Algorithm/image/Gaussian_kernel.png)
