@@ -1,4 +1,4 @@
-# **Paper name**  
+# **Paper**  
 Batch effects in single-cell RNA -sequencing data are corrected by matching mutual nearest neighbors
 # **Website**  
 
