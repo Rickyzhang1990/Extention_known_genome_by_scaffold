@@ -13,7 +13,30 @@ The next step involves identification of mutual nearest neighbors.
 ![MNN algorithm](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/MNN_algorithm.png)
 For each MNN pair, a pair-specific batch-correction vector is computed as the vector difference between the expression profiles of the paired cells. 
 Therefore, we can calculate the batch vectors for a different set of inquiry genes ,A cell-specific batch-correction vector is then calculated as a weighted average of these pair-specific vectors,  
- as computed with a Gaussian kernel. 
+ as computed with a Gaussian kernel.   
+# **parameters and notice**   
+```R
+mnnCorrect(..., k=20, sigma=0.1, cos.norm.in=TRUE, cos.norm.out=TRUE,
+         svd.dim=0L, var.adj=TRUE, compute.angle=FALSE, subset.row=NULL, 
+         order=NULL, pc.approx=FALSE, irlba.args=list(),
+         BPPARAM=SerialParam())  
+```   
+  ...: Two or more expression matrices where genes correspond to
+     rows and cells correspond to columns. Each matrix should
+     contain cells from the same batch; multiple matrices
+     represent separate batches of cells. Each matrix should
+     contain the same number of rows, corresponding to the same
+     genes (in the same order).  
+    k: An integer scalar specifying the number of nearest neighbors
+     to consider when identifying mutual nearest neighbors.  
+sigma: A numeric scalar specifying the bandwidth of the Gaussian
+          smoothing kernel used to compute the correction vector for
+          each cell.
+必填参数为第一个，需要数据2个或者2个以上的表达矩阵，每个举证必修有同样数量行即代表排序相同的基因。  
+Expected type of input data:  
+The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases   
+in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.  
+
 相关知识：  
 欧氏距离：欧式距离源自N维欧氏空间中两点x1,x2x1​,x2​间的距离公式。  
 ![欧氏距离](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/euli_distane.png)  
