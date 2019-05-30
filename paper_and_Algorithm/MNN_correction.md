@@ -27,12 +27,12 @@ mnnCorrect(..., k=20, sigma=0.1, cos.norm.in=TRUE, cos.norm.out=TRUE,
     k: An integer scalar specifying the number of nearest neighbors
      to consider when identifying mutual nearest neighbors.  
 sigma: A numeric scalar specifying the bandwidth of the Gaussian
-          smoothing kernel used to compute the correction vector for
-          each cell.
-必填参数为第一个，需要数据2个或者2个以上的表达矩阵，每个举证必修有同样数量行即代表排序相同的基因。    
-Expected type of input data:    
+       smoothing kernel used to compute the correction vector for
+       each cell.  
+**必填参数**为第一个，需要数据2个或者2个以上的表达矩阵，每个矩阵应当行数相同即基因相同且基因顺序也一致。    
+**Expected type of input data**:    
 The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.    
-相关知识：  
+# 相关知识：  
 欧氏距离：欧式距离源自N维欧氏空间中两点x1,x2x1​,x2​间的距离公式。   
               ![欧氏距离](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/euli_distance.png)    
 余弦距离：余弦相似度，又称为余弦相似性，是通过计算两个向量的夹角余弦值来评估他们的相似度。余弦相似度将向量根据坐标值，绘制到向量空间中。  
