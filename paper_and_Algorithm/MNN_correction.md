@@ -31,7 +31,8 @@ sigma: A numeric scalar specifying the bandwidth of the Gaussian
        each cell.  
 **必填参数**为第一个，需要数据2个或者2个以上的表达矩阵，每个矩阵应当行数相同即基因相同且基因顺序也一致。    
 **Expected type of input data**:    
-The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.    
+The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.     
+Normalization methods:Pooling across cells to normalize single-cell RNA sequencing data with many zero counts
 # 相关知识：  
 欧氏距离：欧式距离源自N维欧氏空间中两点x1,x2x1​,x2​间的距离公式。   
               ![欧氏距离](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/euli_distance.png)    
