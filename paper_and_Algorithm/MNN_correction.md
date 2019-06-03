@@ -29,6 +29,33 @@ mnnCorrect(..., k=20, sigma=0.1, cos.norm.in=TRUE, cos.norm.out=TRUE,
 sigma: A numeric scalar specifying the bandwidth of the Gaussian
        smoothing kernel used to compute the correction vector for
        each cell.  
+**输出结果**  
+Value:
+
+     A named list containing two components:
+
+     ‘corrected’: A list of length equal to the number of batches,
+          containing matrices of corrected expression values for each
+          cell in each batch. The order of batches is the same as
+          supplied in ‘...’, and the order of cells in each matrix is
+          also unchanged.
+
+     ‘pairs’: A named list of length equal to the number of batches,
+          containing DataFrames specifying the MNN pairs used for
+          correction. Each row of the DataFrame defines a pair based on
+          the cell in the current batch and another cell in an earlier
+          batch. The identity of the other cell and batch are stored as
+          run-length encodings to save space.
+**示例**
+```R 
+Examples:
+
+     B1 <- matrix(rnorm(10000), ncol=50) # Batch 1 
+     B2 <- matrix(rnorm(10000), ncol=50) # Batch 2
+     out <- mnnCorrect(B1, B2) # corrected values
+    corrected <- out$correcred 
+	pairs <-  out$pairs
+```
 **必填参数**为第一个，需要数据2个或者2个以上的表达矩阵，每个矩阵应当行数相同即基因相同且基因顺序也一致。    
 **Expected type of input data**:    
 The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.     
