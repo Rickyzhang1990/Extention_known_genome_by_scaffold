@@ -1,8 +1,8 @@
 # Review 1  
 ## paper  
- Identifying cell populations with scRNASeq.Tallulah S. Andrews, Martin Hemberg , Molecular Aspects of Medicine   25 July 2017   
+Identifying cell populations with scRNASeq.Tallulah S. Andrews, Martin Hemberg , Molecular Aspects of Medicine   25 July 2017   
 ## batch effect   
- Normalization methods are available
+Normalization methods are available
 for correcting for different sequencing depths across cells and removing batch effects ,Sequencing depth can be corrected using counts/transcripts per  
 million, or downsampling. Methods developed specifically for scRNASeq include scran ,which has advantages for datasets with many differentially  
 expressed genes, and SCnorm which accounts for different effects of sequencing depth of genes with different expression levels. As discussed above, if  
