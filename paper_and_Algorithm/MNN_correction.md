@@ -10,7 +10,7 @@ we propose a new method for removal of discrepancies between biologically relate
 **The next step** involves identification of mutual nearest neighbors.  
            ![MNN algorithm](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/MNN_algorithm.png)  
 **step three** For each MNN pair, a pair-specific batch-correction vector is computed as the vector difference between the expression profiles of the paired cells.   
-**Therefore**, we can calculate the batch vectors for a different set of inquiry genes ,A cell-specific batch-correction vector is then calculated as a weighted average of these pair-specific vectors,   as computed with a Gaussian kernel.     
+**Therefore**, we can calculate the batch vectors for a different set of inquiry genes ,A cell-specific batch-correction vector is then calculated as a weighted average of these pair-specific vectors,as computed with a Gaussian kernel.     
 # **parameters and notice**   
 ```R
 mnnCorrect(..., k=20, sigma=0.1, cos.norm.in=TRUE, cos.norm.out=TRUE,
