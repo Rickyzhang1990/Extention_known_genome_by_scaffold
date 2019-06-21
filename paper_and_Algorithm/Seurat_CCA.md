@@ -52,5 +52,6 @@ c3 <- subset(c3, subset = nFeature_RNA > 500)
 c3 <- NormalizeData(c3, verbose = FALSE)
 c3 <- FindVariableFeatures(c3, selection.method = "vst", nfeatures = 2000)
 c1c3.anchors <- FindIntegrationAnchors(object.list = list(c1, c3), dims = 1:20)
-c1c3_inter <- IntegrateData(anchorset = c1c3.anchors, dims = 1:20)
+c1c3_inter <- IntegrateData(anchorset = c1c3.anchors, new.assay.name = "integrated", dims = 1:20)
+
 ```
