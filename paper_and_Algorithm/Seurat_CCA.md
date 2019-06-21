@@ -39,6 +39,7 @@ result <- RunCCA(object1 = c1, object2 = c3, genes.use=genes.use, num.cc = 30, a
 **v3版**批次校正整合流程：参考如下(https://github.com/satijalab/seurat/issues/1617)  
 参考二(https://satijalab.org/seurat/v3.0/immune_alignment.html)
 ```R 
+library(Seurat)
 c1.data <- Read10X("/lustre/work/chaozhang/test/test_Seurat3/owndata/C1" )
 c3.data <- Read10X("/lustre/work/chaozhang/test/test_Seurat3/owndata/C3" )
 c1 <- CreateSeuratObject(c1.data, project = "C1", min.cells = 5)
