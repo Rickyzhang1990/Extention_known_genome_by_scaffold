@@ -23,7 +23,7 @@
 **Seurat**  
 ![seurat](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Seurat_violin.png)
 
-##Dot plot  
+## Dot plot  
 **Scanpy**  
 ![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_dotplot.png)  
 **Seurat**  
