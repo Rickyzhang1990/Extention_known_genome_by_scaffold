@@ -1,32 +1,31 @@
 # scanpy vs Seurat 
 ## HVG gene
-**Scanpy**   
+<font color=#0099ff size=12 face="黑体">Scanpy</font>  
 ![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_HVG.png)  
-**Seurat**  
+<font color=#0099ff size=12 face="黑体">Seurat</font>
 ![SeuRat](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Seurat_HVG.png)  
 
 ## PCA 
-**Scanpy**  trajectory inference
+<font color=#0099ff size=12 face="黑体">Scanpy</font> 
 ![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_PCA.png)   
-**Seurat**
+<font color=#0099ff size=12 face="黑体">Seurat</font>
 ![seurat](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Seurat_PCA.png)  
 
 ## u-map
-**Scanpy**  
+<font color=#0099ff size=12 face="黑体">Scanpy</font> 
 ![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_umap.png)   
-**Seurat**  
+<font color=#0099ff size=12 face="黑体">Seurat</font>
 ![seurat](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Seurat_umap.png)
 
 ## violin plot 
-**Scanpy**  
+<font color=#0099ff size=12 face="黑体">Scanpy</font>  
 ![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_violin.png)  
-**Seurat**  
+<font color=#0099ff size=12 face="黑体">Seurat</font> 
 ![seurat](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Seurat_violin.png)
 
 ## Dot plot  
-**Scanpy**  
-![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_dotplot.png)  
-**Seurat**  
+<font color=#0099ff size=12 face="黑体">Scanpy</font>  
+![Scanpy](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/Scanpy_dotplot.png)   
 
 ##  trajectory inference   
 等同于拟时间分析分析，轨迹推断/伪时间分析则构建了一个细胞发育和分化的模型。  
