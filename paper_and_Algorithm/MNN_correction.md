@@ -60,6 +60,26 @@ Examples:
 **Expected type of input data**:    
 The input expression values should generally be log-transformed,e.g., log-counts, see ‘normalize’ for details. They should also be normalized within each data set to remove cell-specific biases in capture efficiency and sequencing depth. By default, a further cosine normalization step is performed on the supplied expression data to eliminate gross scaling differences between data sets.     
 Normalization methods:Pooling across cells to normalize single-cell RNA sequencing data with many zero counts
+# MNN local test  
+使用C1,C3数据进行批次校正，首先使用magic软件对数据进行填充和标准化，使用自写脚本提取二者相同的基因。使用`scran`包中的`mnnCorrect`对得到的两个matrix进行批次校正，代码如下：  
+```R 
+library(scran)
+c1 <- read.table("/lustre/work/chaozhang/test/test_MNN/normarlization/temp/C1_filter_matrix.csv_imputed_intersect",sep = "\t" ,header = T) 
+c3 <- read.table("/lustre/work/chaozhang/test/test_MNN/normarlization/temp/C3_filter_matrix.csv_imputed_intersect",sep = "\t" ,header = T)
+c1_rowname = c1[,1] 
+c1_matrix <- c1[,-1]
+c3_rowname <-  c3[,1]
+c3_matrix <- c3[,-1]
+c1_matrix <- data.matrix(c1_matrix)
+c3_matrix <- data.matrix(c3_matrix)
+result <- mnnCorrect(c1_matrix ,c3_matrxi ,k=20)
+c1_correct <- result$corrected[[1]]
+c1_result <- cbind(c1_rowname , data.frame(result$corrected[[1]]))
+c3_result <- cbind(c3_rowname , data.frame(result$corrected[[2]]))
+write.table(c1_result , sep = "\t" ,quote = F ,col.names = F ,row.names = T ,file = "c1_correct.csv")
+write.table(c3_result , sep = "\t" ,quote = F ,col.names = F ,row.names = T ,file = "C3_correct.csv")
+```   
+
 # 相关知识：  
 欧氏距离：欧式距离源自N维欧氏空间中两点x1,x2x1​,x2​间的距离公式。   
               ![欧氏距离](https://github.com/Rickyzhang1990/during_work/blob/master/paper_and_Algorithm/image/euli_distance.png)    
