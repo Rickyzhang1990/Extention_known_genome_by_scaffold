@@ -1,0 +1,13 @@
+README.rst
+scMixSample
+setup.py
+scMixSample.egg-info/PKG-INFO
+scMixSample.egg-info/SOURCES.txt
+scMixSample.egg-info/dependency_links.txt
+scMixSample.egg-info/top_level.txt
+scmix/__init__.py
+scmix/progress.py
+tagbase/__init__.py
+tagbase/countbarcode.py
+tagbase/sampletag.py
+tagbase/tag2seq.py

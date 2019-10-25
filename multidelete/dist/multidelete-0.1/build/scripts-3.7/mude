@@ -1,0 +1,9 @@
+#!/lustre/work/chaozhang/anaconda3/bin/python 
+#coding=utf-8 
+
+#import sys,os 
+#sys.path.append("~/scripts/pyownlib/multidelete")
+from multide import multidelete 
+
+
+multidelete.main()

@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: multidelete
+Version: 0.1
+Summary: use multi cores delete a lot of files
+Home-page: UNKNOWN
+Author: kakazhang
+Author-email: fredzhang1990@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: multidelete
+Requires: multiprocessing

@@ -1,0 +1,9 @@
+README.rst
+mude
+setup.py
+multide/__init__.py
+multide/multidelete.py
+multidelete.egg-info/PKG-INFO
+multidelete.egg-info/SOURCES.txt
+multidelete.egg-info/dependency_links.txt
+multidelete.egg-info/top_level.txt

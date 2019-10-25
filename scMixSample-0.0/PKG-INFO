@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: scMixSample
+Version: 0.0
+Summary: use multi cores delete a lot of files
+Home-page: UNKNOWN
+Author: kakazhang
+Author-email: chaozhang@capitalbiotech.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: click
+Requires: configparser
+Requires: multiprocessing
+Requires: gzip
+Requires: re
