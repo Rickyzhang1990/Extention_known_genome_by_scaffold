@@ -1,8 +1,8 @@
 本工具用于处理混样测序文库构建的样品reads拆分流程，可以用于拆分混样测序不同样本的reads
 
-#安装方法
-解压该工具包压缩文件，在包中存在setup.py，使用以下命令可以完成
-python  setup.py  install 
+#安装方法  
+解压该工具包压缩文件，在包中存在setup.py，使用以下命令可以完成  
+python  setup.py  install     
 完成安装即可将该包安装到我们的python环境中
 
 #**使用该流程前需要完善位于tagbase目录下的config.ini文件，填写自己环境下可用相关软件**
